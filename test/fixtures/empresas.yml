@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cnpj: MyString
+  nome: MyString
+  endereco: MyString
+  numero: MyString
+  complemento: MyString
+  bairro: MyString
+  cidade: MyString
+  uf: MyString
+
+two:
+  cnpj: MyString
+  nome: MyString
+  endereco: MyString
+  numero: MyString
+  complemento: MyString
+  bairro: MyString
+  cidade: MyString
+  uf: MyString

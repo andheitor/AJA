@@ -1,0 +1,28 @@
+<h1>Clientes</h1>
+
+<%= link_to 'Novo Cliente', new_empresa_path, :class => "btn btn-inverse" %>
+<br />
+<br />
+<table  class="table table-striped">
+  <tr>
+    <th>CNPJ</th>
+    <th>Nome</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @empresas.each do |empresa| %>
+  <tr>
+    <td><%= empresa.cnpj %></td>
+    <td><%= empresa.nome %></td>
+    <td><%= link_to 'Show', empresa, :class => "btn btn-mini" %></td>
+    <td><%= link_to 'Edit', edit_empresa_path(empresa), :class => "btn btn-mini" %></td>
+    <td><%= link_to 'Destroy', empresa, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-mini btn-danger" %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novo Cliente', new_empresa_path, :class => "btn btn-inverse" %>

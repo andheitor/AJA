@@ -1,0 +1,35 @@
+<h1>Listing contatos</h1>
+
+<table>
+  <tr>
+    <th>Id empresa</th>
+    <th>Nome</th>
+    <th>Cargo</th>
+    <th>Telefone comercial</th>
+    <th>Celular</th>
+    <th>Nextel</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @contatos.each do |contato| %>
+  <tr>
+    <td><%= contato.id_empresa %></td>
+    <td><%= contato.nome %></td>
+    <td><%= contato.cargo %></td>
+    <td><%= contato.telefone_comercial %></td>
+    <td><%= contato.celular %></td>
+    <td><%= contato.nextel %></td>
+    <td><%= contato.email %></td>
+    <td><%= link_to 'Show', contato %></td>
+    <td><%= link_to 'Edit', edit_contato_path(contato) %></td>
+    <td><%= link_to 'Destroy', contato, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Contato', new_contato_path %>

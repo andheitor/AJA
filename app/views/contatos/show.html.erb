@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id empresa:</b>
+  <%= @contato.id_empresa %>
+</p>
+
+<p>
+  <b>Nome:</b>
+  <%= @contato.nome %>
+</p>
+
+<p>
+  <b>Cargo:</b>
+  <%= @contato.cargo %>
+</p>
+
+<p>
+  <b>Telefone comercial:</b>
+  <%= @contato.telefone_comercial %>
+</p>
+
+<p>
+  <b>Celular:</b>
+  <%= @contato.celular %>
+</p>
+
+<p>
+  <b>Nextel:</b>
+  <%= @contato.nextel %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @contato.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_contato_path(@contato) %> |
+<%= link_to 'Back', contatos_path %>
